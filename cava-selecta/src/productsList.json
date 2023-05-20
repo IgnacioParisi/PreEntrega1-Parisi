@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "title": "Finca La Anita Petit Verdot",
+        "description": "De color rojo con tintes violáceos. Aromas frutales y florales de gran intensidad.",
+        "price": 2499,
+        "pictureUrl": "../../assets/images/products/product-1.jpeg"
+    },
+    {
+        "id": 2,
+        "title": "Los Arboles Malbec",
+        "description": "Aromas a frutillas y ciruelas. De cuerpo medio y taninos suaves. Sabor muy frutado a frutos rojos, fresco y fácil de beber.",
+        "price": 1599,
+        "pictureUrl": "../../assets/images/products/product-2.jpeg"
+    },
+    {
+        "id": 3,
+        "title": "Argento Estate Collection Malbec",
+        "description": "Presenta aromas a frutos rojos y ciruelas, combinados con notas balsámicas. Un vino con buena estructura, frescura y largo final.",
+        "price": 2360,
+        "pictureUrl": "../../assets/images/products/product-3.jpeg"
+    }
+]

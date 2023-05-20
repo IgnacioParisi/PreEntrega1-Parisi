@@ -1,20 +1,28 @@
 import { CartWidget } from "./CartWidget"
+import Logo from '../assets/images/cava-selecta-logo.png'
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import { Link, NavLink } from "react-router-dom";
 
 export const NavBar = () => {
     return (
-        <div className="navbar-container">
-            <div className="logo">
-                <h2>Cava Selecta</h2>
-            </div>
-            <div className="menu-container">
-                <ul>
-                    <li className="menu-item"><a href="#!">Home</a></li>
-                    <li className="menu-item"><a href="#!">Vinos</a></li>
-                    <li className="menu-item"><a href="#!">Espumantes</a></li>
-                    <li className="menu-item"><a href="#!">Contacto</a></li>
-                </ul>
-            </div>
-            <CartWidget />
-        </div>
+        <Navbar expand="sm" variant="dark" style={{backgroundColor: "rgb(119, 23, 49)"}}>
+            <Container>
+                <Navbar.Brand>
+                    <Link to={'/'}><img src={ Logo } alt="Cava Selecta logo" /></Link>
+                </Navbar.Brand>
+                <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                <Navbar.Collapse id="basic-navbar-nav">
+                    <Nav className="me-auto">
+                        <NavLink to={'/'}>Home</NavLink>
+                        <NavLink>Vinos</NavLink>
+                        <NavLink>Espumantes</NavLink>
+                        <NavLink>Contacto</NavLink>
+                    </Nav>
+                </Navbar.Collapse>
+                <CartWidget />
+            </Container>
+        </Navbar>
     )
 }
