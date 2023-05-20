@@ -1,6 +1,7 @@
 [
     {
         "id": 1,
+        "category": "vinos",
         "title": "Finca La Anita Petit Verdot",
         "description": "De color rojo con tintes violáceos. Aromas frutales y florales de gran intensidad.",
         "price": 2499,
@@ -8,6 +9,7 @@
     },
     {
         "id": 2,
+        "category": "vinos",
         "title": "Los Arboles Malbec",
         "description": "Aromas a frutillas y ciruelas. De cuerpo medio y taninos suaves. Sabor muy frutado a frutos rojos, fresco y fácil de beber.",
         "price": 1599,
@@ -15,9 +17,35 @@
     },
     {
         "id": 3,
+        "category": "vinos",
         "title": "Argento Estate Collection Malbec",
         "description": "Presenta aromas a frutos rojos y ciruelas, combinados con notas balsámicas. Un vino con buena estructura, frescura y largo final.",
         "price": 2360,
         "pictureUrl": "../../assets/images/products/product-3.jpeg"
+    },
+    {
+        "id": 4,
+        "category": "espumantes",
+        "title": "Argento Estate Collection Malbec",
+        "description": "Presenta aromas a frutos rojos y ciruelas, combinados con notas balsámicas. Un vino con buena estructura, frescura y largo final.",
+        "price": 2360,
+        "pictureUrl": "../../assets/images/products/product-3.jpeg"
+    },
+    {
+        "id": 5,
+        "category": "espumantes",
+        "title": "Argento Estate Collection Malbec",
+        "description": "Presenta aromas a frutos rojos y ciruelas, combinados con notas balsámicas. Un vino con buena estructura, frescura y largo final.",
+        "price": 2360,
+        "pictureUrl": "../../assets/images/products/product-3.jpeg"
+    },
+    {
+        "id": 6,
+        "category": "espumantes",
+        "title": "Argento Estate Collection Malbec",
+        "description": "Presenta aromas a frutos rojos y ciruelas, combinados con notas balsámicas. Un vino con buena estructura, frescura y largo final.",
+        "price": 2360,
+        "pictureUrl": "../../assets/images/products/product-3.jpeg"
+
     }
 ]
