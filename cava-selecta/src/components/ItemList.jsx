@@ -1,24 +1,20 @@
 import { Item } from "./Item";
-// import { useParams } from "react-router-dom";
 import CardGroup from 'react-bootstrap/CardGroup';
+import { Container } from "react-bootstrap";
 
 export const ItemList = ({ products }) => {
 
     return (
-        <div>
+        <Container>
             <CardGroup>
                 { products.map((product, index) => {
                     return (
                         <Item 
-                            key={index} 
-                            id={product.id} 
-                            title={product.title} 
-                            description={product.description} 
-                            price={product.price} 
-                            pictureUrl={product.pictureUrl} />
+                            key={index}
+                            {...product} />
                     )
                 })}
             </CardGroup>
-        </div>
+        </Container>
     )
 }

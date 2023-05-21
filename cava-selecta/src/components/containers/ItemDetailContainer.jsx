@@ -7,12 +7,13 @@ import { getProductsById } from "../../asyncMock";
 // import Picture3 from '../../assets/images/products/product-3.jpeg'
 
 export const ItemDetailContainer = () => {
+
+    const [product, setProduct] = useState([])
     const { id } = useParams()
-    const [product, setProduct] = useState({})
 
     useEffect(() => {
         getProductsById(id)
-            .then((product) => setProduct(product))
+            .then((data) => setProduct(data))
             .catch((error) => console.log(error))
     }, [id])
 

@@ -11,15 +11,16 @@ export const getProducts = () => {
 }
 
 export const getProductsById = (productId) => {
+    console.log(productId)
+    console.log(productList)
     return new Promise((resolve) => {
         setTimeout(() => {
-            resolve(productList.find((product) => product.id === productId))
+            resolve(productList.filter((product) => product.id === productId))
         }, 1000)
     })
 }
 
 export const getProductsByCategory = (categoryId) => {
-    console.log(categoryId)
     return new Promise((resolve) => {
         setTimeout(() => {
             resolve(productList.filter((product) => product.category === categoryId))

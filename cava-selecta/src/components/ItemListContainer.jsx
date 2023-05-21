@@ -7,27 +7,17 @@ import { useParams } from "react-router-dom";
 // import Picture3 from '../assets/images/products/product-3.jpeg'
 
 export const ItemListContainer = ({ greeting }) => {
+    
     const [products, setProducts] = useState([])
-
-    const { categoryId } = useParams()
-
-    // useEffect(() => {
-    //     getProducts()
-    //         .then((data) => setProducts(data))
-    //         .catch(error => console.log(error))
-    // }, [])
-
-    // console.log(products)
+    const { id } = useParams()
 
     useEffect(() => {
-        const asyncFunc = categoryId ? getProductsByCategory : getProducts
+        const asyncFunc = id ? getProductsByCategory : getProducts;
 
-        asyncFunc(categoryId)
+        asyncFunc(id)
             .then((data) => setProducts(data))
             .catch(error => console.log(error))
-    }, [categoryId])
-
-    console.log(categoryId)
+    }, [id])
 
     return (
         <>
