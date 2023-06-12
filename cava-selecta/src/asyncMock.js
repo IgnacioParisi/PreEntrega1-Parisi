@@ -1,4 +1,4 @@
-import jsonProducts from "./productsList.json"
+import jsonProducts from "./productsList.json";
 
 const productList = jsonProducts;
 
@@ -11,11 +11,9 @@ export const getProducts = () => {
 }
 
 export const getProductsById = (productId) => {
-    console.log(productId)
-    console.log(productList)
     return new Promise((resolve) => {
         setTimeout(() => {
-            resolve(productList.filter((product) => product.id === productId))
+            resolve(productList.find((product) => product.id === parseInt(productId)))
         }, 1000)
     })
 }

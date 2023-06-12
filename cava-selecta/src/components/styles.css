@@ -12,7 +12,7 @@
 }
 
 .main-section {
-    background-image: url('../assets/images/wepik-export-20230427211351.png');
+    background-image: url('../assets/wepik-export-20230427211351.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -74,7 +74,7 @@
 }
 
 .greeting {
-    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Montserrat', sans-serif; */
     font-weight: bold;
     /* color: #fff; */
     margin-left: 10%;
